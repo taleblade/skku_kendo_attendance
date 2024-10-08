@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>출석체크</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>출석 체크 시스템</h1>
+
+        <!-- 학생 추가 -->
+        <div class="section">
+            <h2>학생 추가</h2>
+            <input type="text" id="studentIdsInput" placeholder="학번을 콤마로 구분하여 입력">
+            <button onclick="addStudents()">학생 추가</button>
+        </div>
+
+        <!-- 출석 체크 -->
+        <div class="section">
+            <h2>출석 체크</h2>
+            <input type="text" id="attendanceIdInput" placeholder="출석할 학생의 학번 입력">
+            <button onclick="markAttendance()">출석 체크</button>
+        </div>
+
+        <!-- 출석 순위 확인 -->
+        <div class="section">
+            <h2>출석 순위 확인</h2>
+            <button onclick="showRankings()">출석 순위 보기</button>
+            <ul id="rankingList"></ul>
+        </div>
+
+        <!-- 출석 기록 보기 -->
+        <div class="section">
+            <h2>출석 기록 보기</h2>
+            <button onclick="showAttendance()">출석 기록 보기</button>
+            <ul id="attendanceList"></ul>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
