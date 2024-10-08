@@ -5,7 +5,7 @@ const attendanceRecord = {};
 
 // 학생 추가 함수 (여러 명)
 function addStudents() {
-    const studentIdsInput = dozoacument.getElementById("studentIdsInput").value;
+    const studentIdsInput = document.getElementById("studentIdsInput").value;
     const studentIds = studentIdsInput.split(","); // 콤마로 구분된 학번들
     studentIds.forEach(studentId => {
         const trimmedId = studentId.trim();
@@ -59,5 +59,3 @@ function showAttendance() {
         attendanceList.appendChild(listItem);
     });
 }
-
-"homepage":"https://taleblade.github.io/skku_kendo_attendance/"
